@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user_lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .user_lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200) {
+  .user_lists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+
+  /* default iPad screens */
+  .user_lists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+  /* For portrait layouts only */
+  .user_lists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+  /* For landscape layouts only */
+  .user_lists {
+    grid-template-columns: 1fr 1fr;
+  }
+}

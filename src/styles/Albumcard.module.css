@@ -1,0 +1,78 @@
+.album_lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.single_album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #cecece;
+    padding: 10px;
+    cursor: pointer;
+}
+.single_album:hover{
+    scale: 1.1;
+    transition: 0.6s ease;
+}
+.single_album span {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+    .album_lists {
+        grid-template-columns: 45% 45%;
+        gap: 35px;
+    }
+
+    .single_album img {
+        width: 50px;
+        height: 50px
+    }
+
+    .single_album span {
+        width: 140px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (device-width: 768px) {
+
+    /* default iPad screens */
+    .album_lists {
+        grid-template-columns: 45% 45%;
+        gap: 35px;
+    }
+
+    .single_album img {
+        width: 50px;
+        height: 50px
+    }
+
+    .single_album span {
+        width: 140px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  
+    /* For portrait layouts only */
+    .album_lists {
+        grid-template-columns: 48% 48%;
+        gap: 35px;
+    }
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  
+    /* For landscape layouts only */
+    .album_lists {
+        grid-template-columns: 45% 45%;
+        gap: 35px;
+    }
+  }

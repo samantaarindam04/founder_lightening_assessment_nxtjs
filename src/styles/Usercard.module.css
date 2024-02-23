@@ -1,0 +1,56 @@
+.user_card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border: 1px solid #cecece;
+    border-radius: 10px 0;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    height: 120px;
+}
+
+.user_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_detail {
+    padding: 4px 0;
+    border-left: 1px solid #cecece;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.user_detail span {
+    margin-left: 10px;
+    word-break: break-all;
+}
+
+.details {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.album_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.album_btn button {
+    background-color: #00ABE4;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.album_btn button:hover{
+    background-color: #fff;
+    color: #00ABE4;
+    border:1px solid #00ABE4;
+    border-radius: 0;
+}
+
