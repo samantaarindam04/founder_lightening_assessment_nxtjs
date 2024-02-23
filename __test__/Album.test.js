@@ -37,8 +37,7 @@ describe('Album Component', () => {
         ];
         getAllAlbums.mockResolvedValueOnce(mockAlbums);
         render(await Album({params: {id: 'testId' }, searchParams:{ userId: 'testUserId' }}));
-
-        await waitFor(() => expect(screen.getByTestId('albumcard')).toBeInTheDocument());
+        await waitFor(() => expect(screen.getByTestId('single_album_test_0')).toBeInTheDocument());
     });
 
     it('renders custom message when no album are returned', async () => {
